@@ -1,0 +1,2364 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+@font-face {
+      font-family: 'Bebas';
+      src: url('../fonts/BebasNeue.eot');
+      src: url('../fonts/BebasNeue.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue.woff') format('woff'),
+         url('../fonts/BebasNeue.ttf') format('truetype'),
+         url('../fonts/BebasNeue.svg#BebasNeueRegular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
+body{
+      color: #313131;
+      margin: 0;
+      padding: 0;
+      font-size: 13px;
+      font-family: 'Arial', 'trebuchet MS', sans-serif;
+      background: #1f1f1f;
+}
+ul{
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+}
+p{
+      line-height: 16px;
+      text-align: justify;
+}
+a{
+      text-decoration: none;
+}
+a img{
+      border: none;
+}
+.header{
+      position: relative;
+      width: 100%;
+      max-height: 550px;
+      background: #000;
+      z-index: 2;
+}
+.hlavicka{
+      width: 100%;
+      background: #000;
+      height: 79px;
+}
+.hlavicka_main{
+      position: relative;
+      width: 940px;
+      margin: 0 auto;
+}
+.hlavicka .logo{
+      display: inline-block;
+      margin-top: 8px;
+      color: #fff;
+      font-size: 43px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.hlavicka .logo span{
+      color: #ffc000;
+}
+.hlavicka .motto{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 54px;
+      font-size: 12px;
+      color: #d5d5d5;
+}
+.hlavicka ul{
+      position: absolute;
+      right: 68px;
+      top: 0;
+      height: 79px;
+      border-left: 1px solid #2b2b2b;
+}
+.hlavicka ul li{
+      position: relative;
+      float: left;
+      font-size: 14px;
+      border-right: 1px solid #2b2b2b;
+}
+.hlavicka ul li a{
+      color: #626262;
+      display: block;
+      line-height: 75px;
+      padding: 4px 10px 0 10px;
+      font-size: 20px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.hlavicka ul li a:hover{
+      color: #ffc000;
+}
+.hlavicka ul li a.activ{
+      color: #fff;
+      background: #ffc000;
+}
+.hlavicka ul.jazyk{
+      position: absolute;
+      top: 16px;
+      right: 15px;
+      height: auto;
+      border: none;
+}
+.hlavicka ul.jazyk li{
+      border: none;
+      font-size: 16px;
+      line-height: 16px;
+      padding-top: 1px;
+}
+.hlavicka ul.jazyk li:first-of-type{
+      padding-right: 6px;
+      margin-right: 6px;
+      border-right: 1px solid #fff;
+}
+.hlavicka ul.jazyk li a{
+      color: #fff;
+      display: block;
+      line-height: 16px;
+      padding: 0;
+      font-size: 16px;
+}
+.hlavicka ul.jazyk li:first-of-type a{
+      color: #ffc000;
+}
+div.banner,
+.slider{
+      position: relative;
+      width: 100%;
+      height: 569px;
+      background: url('../img/slider.png') bottom center no-repeat;
+}
+.telo{
+      position: relative;
+      padding-top: 38px;
+      padding-bottom: 25px;
+      background: #fff;
+      z-index: 1;
+}
+.main{
+      position: relative;
+      width: 940px;
+      margin: 0 auto;
+}
+div.kontakt{
+      position: absolute;
+      right: 0;
+      top: -2px;
+      height: 39px;
+      color: #1a1a1a;
+      font-size: 34px;
+      line-height: 39px;
+      padding-left: 35px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      background: url('../img/tel.png') no-repeat 0 0;
+      z-index: 2;
+}
+div.kontakt a{
+      margin-left: 5px;
+      display: inline-block;
+}
+div.kontakt a img{
+      vertical-align: middle;
+}
+h1,
+h2{
+      color: #1a1a1a;
+      font-weight: normal;
+      font-size: 38px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.uvodna{
+      margin-top: 44px;
+      padding-bottom: 36px;
+}
+.dalsie{
+      margin-top: 25px;
+      text-align: right;
+}
+.dalsie a{
+      color: #929292;
+      font-style: italic;
+      font-size: 12px;
+      text-decoration: underline;
+}
+.dalsie a.odkaz{
+      display: inline-block;
+      padding: 4px 8px 3px 8px;
+      color: #1a1a1a;
+      font-size: 12px;
+      font-style: normal;
+      text-decoration: none;
+      font-weight: bold;
+      background: #ffc000;
+}
+.dalsie a:hover.odkaz{
+      color: #fff;
+      background: #1a1a1a;
+}
+.top{
+      margin-top: 25px;
+      text-align: right;
+      background: url('../img/top.png') 907px 7px no-repeat;
+      border-bottom: 1px solid #e2e2e2;
+      text-transform: uppercase;
+      font-size: 11px;
+}
+.top a{
+      color: #262626;
+}
+/*---------------------------------------------- PROJEKTY --------------------------------------------*/
+.zobraz{
+      position: relative;
+      margin: 21px 0 -5px 0;
+}
+.zobraz a{
+      display: inline-block;
+      color: #1a1a0f;
+      text-decoration: none;
+      padding: 2px 40px 4px 10px;
+      background: url('../img/sipka.png') top 7px right 19px no-repeat;
+}
+.zobraz a.activ{
+      background: #ffc000 url('../img/sipka.png') top 7px right 19px no-repeat;
+}
+.zobraz .zkradlovo{
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 2px 43px 4px 10px;
+      background: #f3f3f3 url('../img/zrkadlo.jpg') top 0 right 0 no-repeat;
+}
+.projekt{
+      text-decoration: none;
+      width: 300px;
+      height: 346px;
+      float: left;
+      margin: 16px 0 4px 20px;
+      color: #313131;
+      position: relative;
+}
+.projekt.prva{
+      margin-left: 0;
+}
+.projekt .novinka{
+      display: block;
+      position: absolute;
+      z-index: 9;
+      color: #1a1a0f;
+      padding: 1px 6px;
+      font-size: 12px;
+      background: #ffc000;
+}
+.projekt .info{
+      position: relative;
+      height: 90px;
+      margin-top: 10px;
+      padding: 23px 16px 23px 16px;
+      background: #f3f3f3;
+}
+.projekt .nazov{
+      font-size: 15px;
+      color: #929292;
+      display: block;
+      height: 20px;
+      overflow: hidden;
+}
+a:hover.projekt{
+      color: #555;
+}
+a:hover.projekt .nazov{
+      color: #333;
+}
+.projekt .info a.link{
+      color: #929292;
+      font-size: 12px;
+      display: inline-block;
+      position: absolute;
+      left: 16px;
+      bottom: 23px;
+      font-style: italic;
+      text-decoration: underline;
+}
+.projekt .info a:hover.link{
+      color: #000;
+}
+.projekt .obrazok{
+    width: 300px;
+    height: 200px;
+    display: block;
+    position: relative;
+}
+.zoomOverlay{
+      position: absolute;
+      width: 300px;
+      height: 220px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      display: none;
+      background: url('../img/lupa.png') center center no-repeat;
+}
+.projekt.podorys{
+      width: 100%;
+      height: auto;
+      float: none;
+      margin: 27px 0 0 0;
+}
+.projekt.podorys .info{
+      font-size: 12px;
+      height: 25px;
+      line-height: 25px;
+      margin: 0 0 10px 0;
+      padding: 0 0 0 8px;
+      color: #1a1a0f;
+      background: #f3f3f3;
+}
+.projekt.podorys .info a{
+      color: #1a1a1a;
+      font-size: 14px;
+      font-weight: bold;
+}
+.projekt.podorys .info a:hover{
+      text-decoration: underline;
+}
+.projekt.podorys a.odkaz{
+      color: #1a1a1a;
+      font-size: 12px;
+      height: 25px;
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 0 10px;
+      text-decoration: none;
+      background: #ffc000;
+}
+.projekt.podorys a.odkaz:hover{
+      background: #1a1a1a;
+      color: #fff;
+      text-decoration: none;
+}
+.projekt.podorys .obrazky{
+      float: left;
+      margin-left: 15px;
+}
+.projekt.podorys .obrazky.prve{
+      margin-left: 0;
+}
+.projekt.podorys .obr{
+      width: 290px;
+      height: 193px;
+      display: block;
+}
+.projekt.podorys .obr:first-of-type{
+      margin-bottom: 19px;
+}
+.projekt.podorys .podor{
+      width: 310px;
+      height: 405px;
+      display: block;
+}
+/*--------------------------------------------- (PROJEKTY) -------------------------------------------*/
+/*---------------------------------------------- PROJEKT DETAIL --------------------------------------*/
+.projekt_detail{
+      position: relative;
+      z-index: 1;
+}
+.projekt_detail .dalsie_projekty{
+      position: absolute;
+      top: 18px;
+      right: 268px;
+      font-size: 17px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.projekt_detail .dalsie_projekty a{
+      display: inline-block;
+      padding: 5px 15px 1px 15px;
+      background: #f3f3f3;
+      color: #1a1a1a;
+}
+.projekt_detail .dalsie_projekty a.sipka_left{
+      padding-left: 8px;
+}
+.projekt_detail .dalsie_projekty a.sipka_right{
+      padding-right: 8px;
+}
+.projekt_detail .dalsie_projekty a:hover{
+      background: #ffc000;
+}
+.projekt_detail strong.uprav{
+      color: #161616;
+      font-weight: normal;
+      display: block;
+      margin-top: -7px;
+}
+.projekt_detail .hl_obr{
+      float: left;
+      width: 672px;
+      margin-top: 16px;
+}
+.projekt_detail .hl_obr.upravit{
+      margin-top: 7px;
+}
+.projekt_detail .right{
+      float: right;
+      width: 258px;
+      margin-top: 16px;
+}
+.projekt_detail .right.upravit{
+      margin-top: 7px;
+}
+.projekt_detail .right h3{
+      margin: 0 12px;
+      font-size: 15px;
+}
+.projekt_detail .right p{
+      margin: 0 12px;
+}
+.projekt_detail .right img{
+      margin: 25px 0;
+}
+.projekt_detail .right .velke_obr{
+      margin-left: 12px;
+}
+.projekt_detail .right .velke_obr h3{
+      margin: 0 0 6px 0;
+}
+.projekt_detail .right .velke_obr img{
+      margin: 0;
+}
+.projekt_detail .right .velke_obr a{
+      display: inline-block;
+      margin-bottom: 2px;
+}
+.projekt_detail .image{
+      display: inline-block;
+}
+.otaznik{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+      width: 14px;
+      height: 13px;
+      background: url('../img/otaznik.jpg');
+}
+.otaznik .text{
+      display: none;
+      position: absolute;
+      top: 13px;
+      right: 0;
+      padding: 15px;
+      border: 3px solid #ffc000;
+      border-right: 14px solid #ffc000;
+      width: 300px;
+      background: #f3f3f3;
+      z-index: 5;
+      color: #1a1a1a;
+}
+h2 .otaznik .text,
+li .otaznik .text,
+.uprav .otaznik .text,
+.komplet_cena .otaznik .text{
+      top: 0;
+      left: 13px;
+      color: #313131;
+      font-size: 13px;
+      border: 3px solid #ffc000;
+      border-top: 13px solid #ffc000;
+      font-family: 'Arial', 'trebuchet MS', sans-serif;
+      background: #fff;
+      font-weight: normal;
+      line-height: 16px;
+      text-align: left;
+}
+table.cennik .otaznik .text{
+      color: #313131;
+      font-size: 13px;
+      background: #fff;
+      font-weight: normal;
+      line-height: 16px;
+      text-align: left;
+}
+.pata2 p .otaznik .text{
+      display: none;
+      position: absolute;
+      top: -174px;
+      left: 14px;
+      padding: 15px;
+      border: 3px solid #ffc000;
+      border-bottom: 14px solid #ffc000;
+      width: 450px;
+      height: 140px;
+      background: #f3f3f3;
+      z-index: 5;
+      color: #1a1a1a;
+      font-size: 13px;
+      text-transform: none;
+      text-align: left;
+}
+li .otaznik .text,
+.komplet_cena .otaznik .text{
+      max-width: 250px;
+}
+.uprav .otaznik .text{
+      width: 420px;
+}
+.uprav .otaznik .text a{
+      color: #313131;
+      text-decoration: underline;
+}
+.uprav .otaznik .text a:hover{
+      text-decoration: none;
+}
+p .otaznik .text{
+      border: 3px solid #ffc000;
+      border-top: 13px solid #ffc000;
+      left: -161px;
+      background: #fff;
+}
+span:hover.otaznik .text{
+      display: block;
+}
+.projekt_detail .info{
+      padding: 10px 12px;
+      margin-bottom: 25px;
+      background: #f3f3f3;
+}
+.projekt_detail .info h2{
+      color: #1a1a1a;
+      font-weight: bold;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: 'Arial', sans-serif;
+}
+.projekt_detail .info p{
+      margin: 0;
+}
+.projekt_detail .info table{
+      color: #313131;
+      border-collapse: collapse;
+      margin-top: 19px;
+      width: 100%;
+}
+.projekt_detail .info table tr{
+      height: 19px;
+}
+.projekt_detail .info table tr.red{
+      color: #ce4e35;
+}
+.projekt_detail .info td.left{
+      width: 160px;
+}
+.projekt_detail .info a.objednat{
+      display: inline-block;
+      color: #1a1a1a;
+      font-size: 21px;
+      line-height: 34px;
+      padding: 0 12px;
+      margin: 14px 0 2px 0;
+      float: right;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      background: #ffc000;
+}
+.projekt_detail .right a.nakluc{
+      display: inline-block;
+      color: #1a1a1a;
+      font-size: 16px;
+      line-height: 22px;
+      padding: 2px 3px 0 3px;
+      margin: 3px 0 2px 0;
+      float: right;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      background: #ffc000;
+}
+.projekt_detail .info a:hover.objednat,
+.projekt_detail .info a:hover.nakluc{
+      color: #fff;
+      background: #1a1a1a;
+}
+.projekt_detail .right a.banner{
+      display: block;
+      margin-top: -24px;
+      margin-bottom: 22px;
+}
+.projekt_detail .right a.banner img{
+      margin: 0;
+}
+.projekt_detail .galeria{
+      float: left;
+      width: 672px;
+}
+.projekt_detail .obrazky{
+      margin: 6px 0 30px 0;
+}
+.projekt_detail .galeria .podorysy{
+      position: relative;
+}
+.projekt_detail .galeria .podorysy .zkradlovo{
+      position: absolute;
+      right: 0;
+      top: 0;
+      display: inline-block;
+      color: #1a1a0f;
+      text-decoration: none;
+      padding: 2px 43px 4px 10px;
+      background: #f3f3f3 url('../img/zrkadlo.jpg') top 0 right 0 no-repeat;
+}
+.projekt_detail .top{
+      margin-bottom: 30px;
+}
+.projekt_detail .pohlady{
+      margin-bottom: 20px;
+}
+.projekt .obrazok.zrkadlo img,
+.projekt.podorys.zrkadlo .obr img,
+.projekt.podorys.zrkadlo .podor.zkradlo img,
+.projekt_detail .hl_obr.zkradlo img,
+.projekt_detail .right.zkradlo .fotecka img,
+.projekt_detail .right .velke_obr.zkradlo img,
+.projekt_detail .zkradlo .obrazky .fotecka img,
+.projekt_detail .zkradlo .podorysy .fotecka.otoc img,
+.projekt_detail .pohlady.zkradlo img{
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+}
+/*--------------------------------------------- (PROJEKT DETAIL) -------------------------------------*/
+/*---------------------------------------------- STRANKA ---------------------------------------------*/
+.stranka_left{
+      float: left;
+      width: 650px;
+      margin-top: 16px;
+}
+.stranka_left form{
+      margin-top: 32px;
+}
+.stranka_left table{
+      border-collapse: collapse;
+}
+.stranka_left table td{
+      line-height: 32px;
+}
+.stranka_left table td.left{
+      vertical-align: text-top;
+      width: 175px;
+}
+.stranka_left table input.textbox{
+      height: 25px;
+      border: 1px solid #ccc;
+      padding: 0 5px;
+      width: 370px;
+}
+.stranka_left table input.textbox.hrube{
+      height: 34px;
+      margin-bottom: 10px;
+}
+.stranka_left table input:hover.textbox{
+      border: 1px solid #777;
+}
+.stranka_left table #zrAno,
+.stranka_left table #zrNie{
+      vertical-align: sub;
+      margin-right: 3px;
+}
+.stranka_left table #zrNie{
+      margin-left: 20px;
+}
+.stranka_left table textarea{
+      padding: 4px 5px;
+      font-size: 13px;
+      margin-top: 3px;
+      font-family: 'Arial', sans-serif;
+      width: 370px;
+      height: 96px;
+      border: 1px solid #ccc;
+}
+.stranka_left table textarea.dlhe{
+      width: 530px;
+      height: 190px;
+}
+.stranka_left p.suhlas{
+      width: 541px;
+      padding: 8px;
+      margin: 0;
+      font-size: 12px;
+      font-style: italic;
+      background: #f3f3f3;
+}
+.stranka_left{
+      margin-bottom: 40px;
+}
+.stranka_left p{
+      margin-bottom: 16px;
+}
+.stranka_left p.nadpis{
+      margin-bottom: 0;
+}
+.stranka_left ul{
+      margin: 0 0 16px 14px;
+      list-style-type: circle;
+}
+.stranka_left p.objednat{
+      width: 557px;
+      margin: 10px 0 0 0;
+      text-align: right;
+}
+.stranka_left input.objednat{
+      color: #1a1a1a;
+      font-size: 21px;
+      padding: 6px 15px 3px 15px;
+      margin: 10px 0 10px 0;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      border: none;
+      background: #ffc000;
+}
+.stranka_left input:hover.objednat{
+      color: #fff;
+      background: #1a1a1a;
+}
+.stranka_right{
+      width: 258px;
+      margin-bottom: 40px;
+      float: right;
+}
+.stranka_right img{
+      margin-bottom: 40px;
+}
+.stranka_right .info{
+      padding: 0 20px 16px 20px;
+      background: #f3f3f3;
+      margin-bottom: 30px;
+}
+.stranka_right .info p{
+      padding-top: 16px;
+}
+.stranka_left form.kontakt{
+      margin-top: 0;
+}
+/*--------------------------------------------- (STRANKA) --------------------------------------------*/
+/*---------------------------------------------- LINKY -----------------------------------------------*/
+.linky{
+      float: right;
+      width: 250px;
+      margin: -20px 0 5px 25px;
+      padding: 20px 25px 29px 25px;
+      background: #444;
+}
+.linky a,
+.linky h2{
+      color: #fff;
+}
+.linky h2{
+      margin-bottom: 16px;
+}
+/*--------------------------------------------- (LINKY) ----------------------------------------------*/
+/*---------------------------------------------- TEXTOVA STRANKA -------------------------------------*/
+.text h2{
+      margin-bottom: 32px;
+}
+.text p{
+      margin-bottom: 32px;
+}
+.text p.dalsie{
+      margin-bottom: 0;
+      padding-bottom: 32px;
+}
+.text p:first-letter,
+.stranka_left p:first-letter,
+.stranka_right p:first-letter{
+      font-size: 36px;
+      margin-top: 3px;
+      margin-right: 4px;
+      font-weight: bold;
+      float: left;
+}
+.text p.top:first-letter{
+      font-weight: normal;
+      font-size: 11px;
+      margin-top: 0;
+      margin-right: 0;
+      float: none;
+}
+.text p.dalsie:first-letter,
+.stranka_left p.suhlas:first-letter,
+.stranka_left p.nadpis:first-letter{
+      font-size: 13px;
+      margin-top: 0;
+      margin-right: 0;
+      float: none;
+}
+.text p.dalsie:first-letter,
+.stranka_left p.suhlas:first-letter{
+      font-size: 12px;
+      font-weight: normal;
+}
+.stranka_right p.firma:first-letter{
+      font-size: 15px;
+      margin-top: 0;
+      margin-right: 0;
+      float: none;
+}
+.stranka_right p.kontakt:first-letter{
+      font-size: inherit;
+      margin-top: 0;
+      margin-right: 0;
+      float: none;
+}
+.stranka_right p.cislo:first-letter{
+      font-size: 18px;
+      margin-top: 0;
+      margin-right: 0;
+      float: none;
+}
+.stranka_left .kompletka{
+      background: #1a1a1a;
+      color: #fff;
+      padding: 12px 15px 8px 15px;
+      margin: -19px 0 30px 0;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.stranka_left .kompletka h2{
+      font-size: 39px;
+      margin: 0;
+      color: #fff;
+}
+.stranka_left .kompletka h2 strong{
+      font-weight: normal;
+      color: #ffc000;
+}
+.stranka_left .kompletka p{
+      font-size: 30px;
+      margin-top: 8px;
+      text-align: right;
+}
+.stranka_left .kompletka p .cena{
+      color: #ffc000;
+      font-size: 38px;
+}
+.stranka_left .kompletka p .cena strong{
+      font-size: 61px;
+      font-weight: normal;
+}
+.stranka_left .kompletka p:first-letter,
+.stranka_left .komplet_cena p:first-letter{
+      float: none;
+      margin: 0;
+      font-weight: normal;
+      font-size: 30px;
+}
+.stranka_left .setrit,
+.stranka_left .narocni{
+      width: 325px;
+      float: left;
+      position: relative;
+      min-height: 234px;
+      margin-bottom: 42px;
+}
+.stranka_left .setrit h2,
+.stranka_left .narocni h2{
+      position: absolute;
+      left: 0;
+      top: 5px;
+      display: block;
+      padding-top: 8px;
+      width: 234px;
+      height: 226px;
+      float: left;
+      text-align: center;
+      color: #fff;
+      -ms-transform: rotate(270deg);
+      -webkit-transform: rotate(270deg);
+      transform: rotate(270deg);
+      background: url('../img/setrit.png') 0 0 no-repeat;
+}
+.stranka_left .setrit ul,
+.stranka_left .narocni ul{
+      margin: 0 20px 0 107px;
+      font-weight: bold;
+      list-style-type: disc;
+}
+.stranka_left .setrit li,
+.stranka_left .narocni li{
+      margin: 16px 0;
+}
+.stranka_left .setrit li:first-of-type,
+.stranka_left .narocni li:first-of-type{
+      margin-top: 0;
+}
+.stranka_left .setrit li:last-of-type,
+.stranka_left .narocni li:last-of-type{
+      margin-bottom: 0;
+}
+.stranka_left .komplet_cena{
+      clear: both;
+      color: #fff;
+      min-height: 64px;
+      margin-bottom: 20px;
+      background: #1a1a1a;
+}
+.stranka_left .komplet_cena p,
+.stranka_left .komplet_cena p:first-letter{
+      font-size: 18px;
+      font-weight: bold;
+}
+.stranka_left .komplet_cena p{
+      line-height: 30px;
+      float: left;
+      padding-left: 107px;
+      width: 218px;
+}
+.stranka_left .komplet_cena p strong{
+      color: #ffc000;
+      font-size: 24px;
+}
+.stranka_left .spodny_box{
+      padding: 20px 20px 5px 20px;
+      background: #f3f3f3;
+}
+.stranka_left .spodny_box p:last-of-type:first-letter{
+      float: none;
+      margin: 0;
+      font-size: 13px;
+      font-weight: bold;
+}
+.stranka_left .spodny_box p:last-of-type{
+      line-height: 28px;
+}
+.stranka_left .spodny_box p strong.telefon{
+      font-size: 24px;
+}
+.stranka_left .spodny_box p strong.mail{
+      font-size: 18px;
+}
+.stranka_right p.kontakt strong{
+      color: #606060;
+}
+.stranka_right ul{
+      list-style: disc;
+      padding-left: 15px;
+}
+.stranka_right ul li{
+      padding-left: 5px;
+}
+/*---------------------------------------------- CENNIK ----------------------------------------------*/
+table.cennik{
+      width: 100%;
+      margin-bottom: 15px;
+}
+table.cennik td{
+      background: #f2f2f2;
+      width: 136px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #000;
+      text-align: center;
+      border-left: 4px solid #fff;
+      border-bottom: 4px solid #fff;
+}
+table.cennik tr.tmavsie td{
+      background: #eaeaea;
+}
+table.cennik td:first-of-type{
+      text-align: left;
+      padding-left: 8px;
+      font-size: 12px;
+      line-height: 17px;
+      width: auto;
+      border-left: none;
+}
+table.cennik tr.typ td{
+      font-size: 27px;
+      font-weight: bold;
+      color: #fff;
+      line-height: 45px;
+      background: #ffc000;
+}
+table.cennik tr.typ td:first-of-type{
+      background: none;
+}
+table.cennik tr.typ td:last-of-type{
+      background: #fe7b09;
+}
+table.cennik tr.hlavicka td{
+      font-size: 17px;
+      font-weight: bold;
+      color: #000;
+      background: #f2f2f2;
+}
+table.cennik tr.hlavicka td:first-of-type{
+      font-size: 13px;
+      line-height: 19px;
+      font-weight: normal;
+      color: #fff;
+      background: #1a1a1a;
+}
+table.cennik tr.hlavicka h2{
+      font-size: 20px;
+      line-height: 19px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 0;
+      font-family: 'Arial', 'trebuchet MS', sans-serif;
+}
+table.cennik h3{
+      font-size: 19px;
+      line-height: 24px;
+      margin-top: 4px;
+      color: #000;
+      font-weight: normal;
+}
+table.cennik ul{
+      margin: 0 0 8px 45px;
+      list-style-type: disc;
+}
+table.cennik li{
+      padding-left: 20px;
+}
+table.cennik tr td.cena{
+      width: 112px;
+      padding-left: 24px;
+      background: #f2f2f2 url('../img/cennik_cena.png') 34px center no-repeat;
+}
+table.cennik tr.tmavsie td.cena{
+      background: #eaeaea url('../img/cennik_cena.png') 34px center no-repeat;
+}
+/*--------------------------------------------- (CENNIK) ---------------------------------------------*/
+/*---------------------------------------------- OTAZKY ----------------------------------------------*/
+.otazky .left{
+      float: left;
+}
+.otazky .right{
+      float: left;
+}
+.otazky .left.first{
+      width: 285px;
+      margin-right: 20px;
+}
+.otazky .right.first{
+      width: 345px;
+}
+.otazky .first h2{
+      font-size: 24px;
+      color: #fff;
+      background: #000;
+      padding: 10px 0 8px 20px;
+      margin-bottom: 12px;
+}
+.otazky .first p{
+      margin-bottom: 22px;
+}
+.otazky .left.first h2:first-of-type strong{
+      font-weight: normal;
+      color: #ffc000;
+}
+.otazky h2.na_mieru,
+.otazky h2.katalog{
+      font-size: 32px;
+      color: #ffc000;
+      line-height: 24px;
+      padding: 16px 0 11px 20px;
+      background: #000 url('../img/otaznik.png') right 18px center no-repeat;
+}
+.otazky h2.katalog{
+      background: #000 url('../img/list.png') 120px bottom no-repeat;
+}
+.otazky h2.na_mieru strong,
+.otazky h2.katalog strong{
+      font-weight: normal;
+      display: block;
+      font-size: 24px;
+      color: #fff;
+}
+.otazky .upravy h2{
+      font-size: 32px;
+      color: #ffc000;
+      line-height: 24px;
+      padding: 26px 0 21px 30px;
+      background: #000 url('../img/ceruza.png') right 50px center no-repeat;
+}
+.otazky .upravy h2 strong{
+      display: inline-block;
+      font-weight: normal;
+      font-size: 24px;
+      color: #fff;
+      margin-right: 7px;
+}
+.otazky .upravy p:first-letter{
+      font-size: 16px;
+      margin-top: 0;
+      margin-right: 0;
+      font-weight: normal;
+      float: none;
+}
+.otazky .upravy p:first-of-type:first-letter{
+      font-size: 24px;
+}
+.otazky .upravy p:first-of-type{
+      font-size: 24px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      color: #000;
+      margin: 24px 0 20px 30px;
+}
+.otazky .upravy p{
+      margin: 0 0 0 30px;
+}
+.otazky .upravy p strong{
+      font-weight: normal;
+      font-size: 16px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.otazky .upravy ul{
+      line-height: 16px;
+      margin: 0 30px 12px 30px;
+      padding-left: 55px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid #0e0e0e;
+}
+.otazky .upravy  ul:last-of-type{
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 27px;
+}
+.otazky .upravy li{
+      list-style-image: url('../img/otazky_li.png');
+}
+.otazky .left.last{
+      width: 260px;
+      margin-right: 20px;
+}
+.otazky .right.last{
+      width: 370px;
+}
+.otazky .last h2{
+      font-size: 24px;
+      line-height: 22px;
+      color: #fff;
+      background: #000;
+      padding: 14px 0 11px 20px;
+      margin-bottom: 12px;
+}
+.otazky .last h2 strong{
+      color: #ffc000;
+      font-weight: normal;
+}
+.otazky .last p{
+      margin-bottom: 22px;
+}
+.otazky .last h2.kurenie{
+      font-size: 20px;
+      color: #000;
+      background: none;
+      padding: 0;
+}
+.otazky .material{
+      min-height: 160px;
+      background: url('../img/tehly.png') 25px 55px no-repeat;
+}
+.otazky .material h2{
+      font-size: 24px;
+      line-height: 22px;
+      color: #ffc000;
+      background: #000;
+      padding: 13px 0 12px 20px;
+      margin-bottom: 0;
+}
+.otazky .material p{
+      margin-left: 103px;
+      padding: 17px 103px 0 0;
+      background: url('../img/tehly.png') right 25px top 8px no-repeat;
+}
+/*--------------------------------------------- (OTAZKY) ---------------------------------------------*/
+/*--------------------------------------------- (TEXTOVA STRANKA) ------------------------------------*/
+/*---------------------------------------------- PATA ------------------------------------------------*/
+.pata{
+      position: relative;
+      width: 100%;
+      padding: 15px 0 50px 0;
+      color: #fff;
+      background: #444;
+      z-index: 2;
+      min-height: 126px;
+}
+.pata .odkazy{
+      width: 600px;
+      margin-top: 76px;
+      float: left;
+}
+.pata .odkazy a{
+      display: inline-block;
+      color: #ffc000;
+      font-size: 26px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.pata .odkazy a strong{
+      color: #fff;
+      font-weight: normal;
+}
+.pata .odkazy a:first-of-type{
+      margin-right: 55px;
+}
+.pata ul.hl{
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 14px;
+      height: 33px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.pata ul.hl li{
+      width: 150px;
+      margin: 0;
+      padding: 0;
+      width: 150px;
+      border-bottom: none;
+}
+.pata ul.hl a{
+      color: #fff;
+      padding: 0;
+      background: none;
+}
+.pata ul.hl a:hover{
+      color: #ffc000;
+}
+.pata ul li{
+      float: left;
+      width: 130px;
+      margin: 4px 20px 0 0;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #585858;
+}
+.pata ul a{
+      color: #999;
+      padding-left: 13px;
+      background: url('../img/li_pata.png') 0 7px no-repeat;
+}
+.pata ul a:hover{
+      background-position: 0 bottom;
+}
+.pata ul a:hover{
+      color: #fff;
+}
+/*---------------------------------------------- PATA ------------------------------------------------*/
+/*---------------------------------------------- NEWSLETTER ------------------------------------------*/
+.pata .newsletter{
+      font-size: 12px;
+      float: left;
+      width: 340px;
+}
+.pata .newsletter h2{
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 18px;
+      height: 33px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.pata .newsletter form{
+      height: 30px;
+      margin: 9px 0;
+}
+.pata .newsletter .textbox{
+      float: left;
+      width: 220px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 10px;
+      border: none;
+      color: #fff;
+      background: #606060;
+}
+.pata .newsletter .btn{
+      float: left;
+      width: 30px;
+      height: 30px;
+      border: none;
+      background: url('../img/newsletter_btn.jpg') no-repeat;
+}
+.pata .newsletter .btn:hover{
+      background-position: bottom;
+}
+.pata .newsletter a{
+      color: #ffc000;
+      text-decoration: underline;
+      font-style: italic;
+}
+.pata .newsletter a:hover{
+      color: #fff;
+      text-decoration: none;
+}
+/*--------------------------------------------- (NEWSLETTER) -----------------------------------------*/
+.pata2{
+      width: 100%;
+      padding: 10px 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 11px;
+      height: 20px;
+      background: #1f1f1f;
+}
+.pata2 p{
+      float: left;
+      line-height: 20px;
+}
+.pata2 p.author{
+      float: right;
+}
+.pata2 a{
+      color: #fff;
+}
+.pata2 a:hover{
+      color: #ffc000;
+      text-decoration: underline;
+}
+.pata #se-webform-7.se-webform{
+      width: 100%;
+      background: none;
+}
+.pata #se-webform-7.se-webform .book{
+      position: absolute;
+      margin-left: 9px;
+      margin-top: -67px;
+      width: auto;
+}
+.pata .se-header{
+      width: 640px;
+      text-align: right;
+      margin-right: 30px;
+      float: left;
+}
+.pata .se-header h2,
+.pata #se-webform-7.se-webform .se-header h3{
+      color: #fff;
+      font-weight: normal;
+      text-align: right;
+      font-family: 'Bebas', 'Arial', sans-serif;
+      }
+.pata .se-header h2{
+      color: #fff;
+      font-size: 43px;
+}
+.pata #se-webform-7.se-webform .se-header h3{
+      padding: 0;
+      font-size: 63px;
+      margin-top: -37px;
+}
+.pata #se-webform-7.se-webform .se-header h3 strong{
+      font-size: 31px;
+      color: #ffc000;
+      font-weight: normal;
+}
+.pata #se-webform-7.se-webform .se-header h3 strong span{
+      color: #fff;
+}
+.pata .formular{
+      float: right;
+      width: 270px;
+}
+.pata #se-webform-7.se-webform .se-body ul li input[type="text"]{
+      width: 270px;
+      background: #606060;
+      border: none;
+      box-shadow: none;
+      border-radius: 0;
+      color: #fff;
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: normal;
+      font-family: 'Arial', sans-serif;
+}
+.pata #se-webform-7.se-webform .se-body ul{
+      margin-top: 8px;
+      margin-left: 0;
+      margin-right: 0;
+}
+.pata #se-webform-7.se-webform .se-body ul li{
+      border: none;
+      width: auto;
+      float: none;
+      padding: 0;
+      margin-bottom: 11px;
+}
+.pata #se-webform-7.se-webform .se-submit{
+      padding: 0;
+}
+.pata #se-webform-7.se-webform .se-submit button,
+.pata #se-webform-7.se-webform .se-submit div.se-fake{
+      background: #606060 url('../img/news.png') top 0 right 0 no-repeat;
+      border-radius: 0;
+      margin: 9px 0 0 0;
+      float: right;
+      padding: 3px 47px 0 23px;
+      line-height: 29px;
+      height: 29px;
+      font-size: 18px;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+.pata #se-webform-7.se-webform .se-webform-sent-info h3{
+      text-align: right;
+      color: #ffc000;
+      font-size: 31px;
+      margin: 0;
+      font-family: 'Bebas', 'Arial', sans-serif;
+}
+/*--------------------------------------------- (PATA) -----------------------------------------------*/
+.neobtek{
+	line-height: 0;
+	font-size: 0;
+	clear: both;
+}
+.show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #000 url('../img/nav-icon.png') 0 no-repeat;
+	padding: 0;
+      height: 34px;
+      line-height: 34px;
+	display: none;
+      font-size: 17px;
+      margin: 0 0 6px 0;
+      font-weight: 400;
+      width: 34px;
+}
+
+/*Hide checkbox*/
+.menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+@media only screen and (max-width: 959px) {
+      .hlavicka_main{
+            width: 720px;
+      }
+      .hlavicka ul{
+            right: 43px;
+      }
+      .hlavicka ul.jazyk{
+            right: 0;
+      }
+      .hlavicka ul li a{
+            padding: 4px 8px 0 8px;
+      }
+      .header{
+            max-height: 438px;
+      }
+      div.banner, .slider{
+            height: 457px;
+      }
+      .bx-wrapper{
+            width: 720px;
+            height: 368px;
+      }
+      .bx-wrapper .bx-pager,
+      .bx-wrapper .bx-controls-auto{
+            right: 20px;
+            bottom: 75px;
+      }
+      .main{
+            width: 720px;
+      }
+      .projekt{
+            width: 230px;
+            height: 300px;
+            margin: 16px 0 4px 15px;
+      }
+      .projekt .obrazok{
+            width: 230px;
+            height: 153px;
+      }
+      .projekt .obrazok img{
+            width: 100%;
+      }
+      .projekt.podorys .obrazky.tu:nth-child(even){
+            display: none;
+      }
+      .zoomOverlay{
+            width: 230px;
+            height: 153px;
+      }
+      .projekt_detail .dalsie_projekty{
+            top: -1px;
+      }
+      .projekt_detail .dalsie_projekty a{
+            display: block;
+      }
+      .projekt_detail .dalsie_projekty a.sipka_right{
+            text-align: right;
+            margin-top: 5px;
+      }
+      .projekt_detail .hl_obr,
+      .projekt_detail .galeria{
+            width: 450px;
+      }
+      .projekt_detail .hl_obr .fotecka img{
+            width: 100%;
+      }
+      .projekt_detail .galeria .obrazky{
+            margin-left: 2px;
+      }
+      .projekt_detail .galeria .obrazky .fotecka{
+            display: inline-block;
+            width: 71px;
+      }
+      .projekt_detail .galeria .obrazky .fotecka img{
+            width: 100%;
+      }
+      .projekt_detail .galeria .podorysy a.fotecka{
+            display: block;
+            width: 334px;
+            margin: 0 auto;
+      }
+      .projekt_detail .pohlady .fotecka{
+            width: 177px;
+            display: inline-block;
+      }
+      .projekt_detail .pohlady .fotecka img{
+            width: 100%;
+      }
+      .top{
+            background-position: 687px 7px;
+      }
+      .stranka_left{
+            width: 440px;
+      }
+      .stranka_left img{
+            width: 100%;
+            height: auto;
+      }
+      .stranka_left .kompletka{
+            margin-bottom: 15px;
+      }
+      .stranka_left .kompletka h2{
+            font-size: 36px;
+      }
+      .stranka_left .kompletka p,
+      .stranka_left .kompletka p::first-letter{
+            font-size: 28px;
+      }
+      .stranka_left .kompletka p{
+            text-align: left;
+            margin-top: 12px;
+      }
+      .stranka_left .kompletka p .cena{
+            font-size: 35px;
+      }
+      .stranka_left .kompletka p .cena strong{
+            font-size: 56px;
+      }
+      .stranka_left .setrit,
+      .stranka_left .narocni{
+            width: 215px;
+      }
+      .stranka_left .setrit{
+            margin-right: 10px;
+      }
+      .stranka_left .setrit h2,
+      .stranka_left .narocni h2{
+            background-position: top center;
+            -ms-transform: none;
+            -webkit-transform: none;
+            transform: none;
+            position: relative;
+            width: 215px;
+            height: 80px;
+            top: 0;
+      }
+      .stranka_left .setrit ul,
+      .stranka_left .narocni ul{
+            clear: both;
+            margin: 0 0 0 15px;
+      }
+      .stranka_left .komplet_cena p{
+            padding-left: 15px;
+            margin-right: 10px;
+            width: 200px;
+      }
+      .stranka_left .komplet_cena p.cena_narocni{
+            margin-right: 0;
+      }
+      .stranka_left table input.textbox,
+      .stranka_left table textarea{
+            width: 315px;
+      }
+      .stranka_left p.suhlas{
+            width: 424px;
+      }
+      .stranka_left p.objednat{
+            width: 440px;
+      }
+      table.cennik tr.typ td{
+            font-size: 24px;
+            line-height: 40px;
+      }
+      table.cennik tr.hlavicka h2{
+            font-size: 18px;
+      }
+      table.cennik tr.hlavicka td:first-of-type{
+            padding-top: 5px;
+            padding-bottom: 3px;
+      }
+      table.cennik td:first-of-type{
+            padding-left: 6px;
+      }
+      table.cennik ul{
+            margin-left: 25px;
+      }
+      table.cennik li{
+            padding-left: 3px;
+      }
+      .otazky .left,
+      .otazky .right,
+      .otazky .left.first,
+      .otazky .right.first,
+      .otazky .left.last,
+      .otazky .right.last{
+            float: none;
+            margin: 0;
+            width: 440px;
+      }
+      .otazky .first h2,
+      .otazky .last h2{
+            padding-left: 10px;
+      }
+      .otazky .upravy h2{
+            padding-left: 10px;
+            background: #000;
+      }
+      .otazky .upravy p:first-of-type{
+            margin-left: 0;
+      }
+      .otazky .upravy p:first-of-type,
+      .otazky .upravy p:first-of-type::first-letter{
+            font-size: 21px;
+      }
+      .otazky .upravy p:first-of-type{
+            margin-top: 20px;
+            margin-bottom: 15px;
+      }
+      .otazky .upravy p{
+            margin-left: 0;
+      }
+      .otazky .upravy ul{
+            padding: 0 0 8px 15px;
+            margin: 4px 0 12px 0;
+      }
+      .otazky .material{
+            background-position: 10px 55px;
+      }
+      .otazky .material h2{
+            padding-left: 10px;
+            font-size: 22px;
+      }
+      .otazky .material p{
+            padding: 7px 76px 0 0;
+            margin-left: 75px;
+            background-position: right 10px top 8px;
+      }
+      .stranka_left .kontakt table input.textbox,
+      .stranka_left table textarea.dlhe{
+            width: 428px;
+      }
+      .pata .newsletter{
+            width: 270px;
+      }
+      .pata .odkazy{
+            margin-top: 39px;
+            width: 450px;
+      }
+      .pata .odkazy a{
+            line-height: 32px;
+      }
+      .pata2 p,
+      .pata2 p.author{
+            float: none;
+            text-align: center;
+      }
+      .pata2 p .otaznik .text{
+            left: -486px;
+      }
+}
+
+@media only screen and (max-width: 740px) {
+      .menu{
+            position: absolute;
+            top: 15px;
+            left: 375px;
+            z-index: 3;
+            width: 34px;
+      }
+
+	/*Make dropdown links appear inline*/
+	ul#menu {
+		position: static;
+		display: none;
+            margin-left: -376px;
+            width: 455px;
+	}
+	/*Create vertical spacing*/
+	#menu li {
+            border-bottom: 1px solid #cdcdcd;
+            margin-bottom: 0;
+            background: #fff;
+	}
+	/*Make all menu links full width*/
+	.hlavicka .menu ul#menu li, li a {
+		width: 100%;
+            line-height: 40px;
+	}
+      .hlavicka .menu ul#menu li a{
+            padding-left: 15px;
+            line-height: 40px;
+		width: 432px;
+      }
+      .hlavicka .menu ul#menu a{
+            color: #000;
+      }
+	.hlavicka .menu ul#menu a.activ{
+            color: #ffc000;
+            background: none;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+      .hlavicka_main{
+            width: 455px;
+      }
+      .hlavicka ul{
+            right: 43px;
+      }
+      .hlavicka ul.jazyk{
+            right: 0;
+      }
+      .hlavicka ul li a{
+            padding: 4px 8px 0 8px;
+      }
+      .header{
+            max-height: 302px;
+      }
+      div.banner, .slider{
+            height: 321px;
+      }
+      .bx-wrapper{
+            width: 455px;
+            height: 232px;
+      }
+      .bx-wrapper .bx-pager,
+      .bx-wrapper .bx-controls-auto{
+            width: 280px;
+            text-align: left;
+      }
+      .bx-wrapper .bx-pager.bx-default-pager a{
+            margin-top: 3px;
+      }
+      .bx-controls.bx-has-pager{
+            display: none;
+      }
+      div.kontakt{
+            position: relative;
+            margin-top: 44px;
+      }
+      div.kontakt.podstranky{
+            margin-top: 0;
+      }
+      div.uvodna{
+            margin-top: 10px;
+      }
+      .main{
+            width: 455px;
+      }
+      .zobraz a{
+            background-position: right 9px top 7px;
+            padding: 2px 30px 4px 6px;
+      }
+      .zobraz a.activ{
+            background-position: right 9px top 7px;
+      }
+      .projekt{
+            width: 220px;
+            height: 300px;
+            margin: 16px 0 4px 15px;
+      }
+      .projekt:nth-child(even){
+            margin-left: 0;
+      }
+      .projekt:nth-child(odd){
+            margin-left: 15px;
+      }
+      .projekt .obrazok{
+            width: 220px;
+            height: 147px;
+      }
+      .projekt .obrazok img{
+            width: 100%;
+      }
+      .projekt.podorys a.odkaz{
+            top: 35px;
+      }
+      .projekt.podorys .obr{
+            width: 220px;
+            height: 147px;
+      }
+      .projekt.podorys .obr img{
+            width: 100%;
+      }
+      .projekt.podorys .obrazky{
+            margin-left: 0;
+      }
+      .projekt.podorys .podor{
+            width: 220px;
+            height: auto;
+            margin-left: 15px;
+      }
+      .projekt.podorys .podor img{
+            width: 100%;
+      }
+      .projekt_detail .dalsie_projekty{
+            right: 0;
+      }
+      .projekt_detail .hl_obr,
+      .projekt_detail .galeria{
+            width: 455px;
+            float: none;
+      }
+      .projekt_detail .hl_obr .fotecka img{
+            width: 100%;
+      }
+      .projekt_detail .galeria{
+            float: none;
+      }
+      .projekt_detail .right{
+            width: 455px;
+            float: none;
+      }
+      .projekt_detail .right .info{
+            float: left;
+            margin-right: 15px;
+            width: 196px;
+      }
+      .projekt_detail .info td.left{
+            width: 125px;
+      }
+      .projekt_detail .right h3{
+            width: 220px;
+            float: left;
+            margin: 0;
+      }
+      .projekt_detail .right a.fotecka{
+            float: left;
+            display: block;
+            width: 220px;
+            height: auto;
+            float: left;
+            margin-top: 12px;
+      }
+      .projekt_detail .right a.fotecka img{
+            width: 100%;
+            margin: 0;
+      }
+      .projekt_detail .right .obr_velke{
+            clear: both;
+      }
+      .projekt_detail .right .velke_obr{
+            float: left;
+            margin-left: 15px;
+            margin-top: -11px;
+            width: 220px;
+      }
+      .projekt_detail .image{
+            width: 70px;
+            height: 50px;
+      }
+      .projekt_detail .image img{
+            width: 100%;
+      }
+      .projekt_detail .galeria{
+            clear: both;
+            padding-top: 10px;
+      }
+      .projekt_detail .galeria .obrazky{
+            margin-left: 2px;
+      }
+      .projekt_detail .galeria .obrazky .fotecka{
+            display: inline-block;
+            width: 71px;
+      }
+      .projekt_detail .galeria .obrazky .fotecka img{
+            width: 100%;
+      }
+      .projekt_detail .galeria .podorysy a.fotecka{
+            display: block;
+            width: 334px;
+            margin: 0 auto;
+      }
+      .projekt_detail .pohlady .fotecka{
+            width: 225px;
+            display: inline-block;
+      }
+      .projekt_detail .pohlady .fotecka img{
+            width: 100%;
+      }
+      .zoomOverlay{
+            width: 220px;
+            height: 147px;
+      }
+      .top{
+            background-position: 422px 7px;
+      }
+      .stranka_left{
+            width: 455px;
+      }
+      .stranka_left table input.textbox,
+      .stranka_left table textarea{
+            width: 320px;
+      }
+      .stranka_left p.suhlas{
+            width: 439px;
+      }
+      .stranka_left p.objednat{
+            width: 455px;
+      }
+      .stranka_right{
+            width: 455px;
+      }
+      .stranka_left .setrit,
+      .stranka_left .narocni{
+            width: 225px;
+      }
+      .stranka_left .setrit{
+            margin-right: 5px;
+      }
+      .stranka_left .setrit h2,
+      .stranka_left .narocni h2{
+            width: 225px;
+      }
+      .stranka_left .komplet_cena p{
+            margin-right: 5px;
+            width: 210px;
+      }
+      .stranka_left .komplet_cena p.cena_narocni{
+            margin-right: 0;
+      }
+      table.cennik td:first-of-type{
+            padding-left: 5px;
+      }
+      .otazky .left,
+      .otazky .right,
+      .otazky .left.first,
+      .otazky .right.first,
+      .otazky .left.last,
+      .otazky .right.last{
+            width: 455px;
+      }
+      .otazky .material{
+            background-position: 10px 55px;
+      }
+      .otazky .material h2{
+            padding-left: 10px;
+            font-size: 22px;
+      }
+      .otazky .material p{
+            padding: 7px 76px 0 0;
+            margin-left: 75px;
+            background-position: right 10px top 8px;
+      }
+      .stranka_left .kontakt table input.textbox,
+      .stranka_left table textarea.dlhe{
+            width: 443px;
+      }
+      .linky{
+            float: none;
+            margin-left: 0;
+            margin-bottom: 20px;
+            width: 405px;
+      }
+      .pata .newsletter{
+            width: 455px;
+            margin-top: 30px;
+            float: none;
+      }
+      .pata .odkazy{
+            margin-top: 0;
+            width: 455px;
+            float: none;
+      }
+      .pata .odkazy a{
+            line-height: 32px;
+      }
+      .pata2 p,
+      .pata2 p.author{
+            float: none;
+            text-align: center;
+      }
+      .pata2 p .otaznik .text{
+            width: 300px;
+            left: -336px;
+            height: 196px;
+            top: -230px;
+      }
+}
+
+@media only screen and (max-width: 471px) {
+      .hlavicka{
+            height: 99px;
+      }
+      .banner{
+            margin-top: -20px;
+      }
+      .hlavicka_main{
+            width: 300px;
+      }
+      .hlavicka ul{
+            right: 43px;
+      }
+      .hlavicka ul.jazyk{
+            right: 0;
+      }
+      .hlavicka ul li a{
+            padding: 4px 8px 0 8px;
+      }
+      
+      .show-menu {
+            margin-bottom: 9px;
+      }
+      .menu{
+            position: absolute;
+            top: 56px;
+            left: 266px;
+            z-index: 3;
+            width: 34px;
+      }
+	/*Make dropdown links appear inline*/
+	ul#menu {
+		position: static;
+		display: none;
+            margin-left: -267px;
+            width: 300px;
+	}
+      .hlavicka .menu ul#menu li a{
+            padding-left: 15px;
+            line-height: 40px;
+		width: 278px;
+      }
+      .hlavicka ul.jazyk{
+            top: 15px;
+      }
+      .hlavicka ul.jazyk li{
+            float: none;
+      }
+      .hlavicka ul.jazyk li:first-of-type{
+            border: none;
+            margin-right: 0;
+            padding-right: 0;
+      }
+      .header{
+            max-height: 302px;
+            max-height: 222px;
+      }
+      div.banner, .slider{
+            height: 241px;
+      }
+      .bx-wrapper{
+            width: 300px;
+            height: 152px;
+      }
+      div.uvodna{
+            margin-top: 10px;
+      }
+      .main{
+            width: 300px;
+      }
+      .zobraz a{
+            background-position: right 19px top 7px;
+            padding: 2px 40px 4px 6px;
+      }
+      .zobraz a.activ{
+            background-position: right 19px top 7px;
+      }
+      .zobraz .zkradlovo{
+            margin-top: 10px;
+            position: relative;
+      }
+      .projekt{
+            width: 300px;
+            height: 346px;
+            margin: 16px 0 4px 0;
+      }
+      .projekt:nth-child(even){
+            margin-left: 0;
+      }
+      .projekt:nth-child(odd){
+            margin-left: 0;
+      }
+      .projekt .obrazok{
+            width: 300px;
+            height: 200px;
+      }
+      .projekt .obrazok img{
+            width: 100%;
+      }
+      .zoomOverlay{
+            width: 300px;
+            height: 200px;
+      }
+      .projekt.podorys .obrazky.prve .obr:nth-child(even){
+            display: none;
+      }
+      .projekt.podorys .obrazky.tu:nth-child(even){
+            display: none;
+      }
+      .projekt.podorys .info{
+            line-height: 15px;
+            height: 31px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+      }
+      .projekt.podorys a.odkaz{
+            line-height: 25px;
+            padding-top: 0;
+            padding-bottom: 0;
+            top: 51px;
+      }
+      .projekt.podorys .obr{
+            width: 300px;
+            height: auto;
+      }
+      .projekt.podorys .obr img{
+            width: 100%;
+      }
+      .projekt.podorys .obrazky{
+            margin-left: 0;
+      }
+      .projekt.podorys .podor{
+            width: 300px;
+            margin-left: 0;
+      }
+      .projekt.podorys .podor img{
+            width: 100%;
+      }
+      .projekt_detail .dalsie_projekty{
+            position: relative;
+      }
+      .projekt_detail .dalsie_projekty a{
+            display: inline-block;
+      }
+      .projekt_detail .hl_obr,
+      .projekt_detail .galeria{
+            width: 300px;
+            float: none;
+      }
+      .projekt_detail .right{
+            width: 300px;
+            float: none;
+      }
+      .projekt_detail .right .info{
+            float: none;
+            margin-right: 0;
+            width: 276px;
+      }
+      .projekt_detail .info td.left{
+            width: 160px;
+      }
+      .projekt_detail .right h3{
+            width: 300px;
+            float: none;
+            margin: 0;
+      }
+      .projekt_detail .right p{
+            margin: 0;
+      }
+      .projekt_detail .right a.fotecka{
+            float: none;
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+      }
+      .projekt_detail .right a.fotecka img{
+            width: 100%;
+            margin: 0;
+      }
+      .projekt_detail .right .obr_velke{
+            clear: both;
+      }
+      .projekt_detail .right .velke_obr{
+            float: none;
+            margin-left: 0;
+            margin-top: 20px;
+            width: 300px;
+      }
+      .projekt_detail .image{
+            width: 72px;
+            height: 52px;
+      }
+      .projekt_detail .galeria .podorysy .zkradlovo{
+            position: relative;
+      }
+      .projekt_detail .galeria .podorysy a.fotecka{
+            width: 300px;
+      }
+      .projekt_detail .galeria .podorysy a.fotecka img{
+            width: 100%;
+      }
+      .projekt_detail .pohlady .fotecka{
+            width: 148px;
+            display: inline-block;
+      }
+      .top{
+            background-position: 267px 7px;
+      }
+      .stranka_left{
+            width: 300px;
+      }
+      .stranka_left .kompletka h2{
+            font-size: 25px;
+      }
+      .stranka_left .kompletka p,
+      .stranka_left .kompletka p::first-letter{
+            font-size: 19px;
+      }
+      .stranka_left .kompletka p{
+            text-align: left;
+            margin-top: 12px;
+      }
+      .stranka_left .kompletka p .cena{
+            font-size: 24px;
+      }
+      .stranka_left .kompletka p .cena strong{
+            font-size: 39px;
+      }
+      .stranka_left .setrit,
+      .stranka_left .narocni{
+            width: 145px;
+      }
+      .stranka_left .setrit{
+            margin-right: 10px;
+      }
+      .stranka_left .setrit h2,
+      .stranka_left .narocni h2{
+            width: 145px;
+            height: 50px;
+            font-size: 26px;
+            background-position: bottom center;
+      }
+      .stranka_left .setrit ul,
+      .stranka_left .narocni ul{
+            margin: 65px 0 0 15px;
+      }
+      .stranka_left .komplet_cena p{
+            padding-left: 5px;
+            margin-right: 10px;
+            width: 140px;
+            font-size: 15px;
+      }
+      .stranka_left .komplet_cena p::first-letter{
+            font-size: 15px;
+      }
+      .stranka_left .komplet_cena p.cena_narocni{
+            margin-right: 0;
+      }
+      .stranka_left .komplet_cena p strong{
+            font-size: 20px;
+      }
+      .stranka_left table input.textbox,
+      .stranka_left table textarea{
+            width: 165px;
+      }
+      .stranka_left p.suhlas{
+            width: 284px;
+      }
+      .stranka_left p.objednat{
+            width: 300px;
+      }
+      .stranka_right{
+            width: 300px;
+      }
+      table.cennik tr.typ td{
+            font-size: 18px;
+            line-height: 35px;
+      }
+      table.cennik tr.hlavicka h2{
+            font-size: 18px;
+      }
+      table.cennik tr.hlavicka td{
+            font-size: 14px;
+      }
+      table.cennik td{
+            font-size: 14px;
+      }
+      table.cennik tr td.cena,
+      table.cennik tr.tmavsie td.cena{
+            background-position: 8px center
+      }
+      table.cennik li{
+            padding-left: 3px;
+      }
+      .otazky .left,
+      .otazky .right,
+      .otazky .left.first,
+      .otazky .right.first,
+      .otazky .left.last,
+      .otazky .right.last{
+            width: 300px;
+      }
+      .otazky .material{
+            background: none;
+      }
+      .otazky .material p{
+            padding: 7px 0 0 0;
+            margin-left: 0;
+            background: none;
+      }
+      .stranka_left .kontakt table input.textbox,
+      .stranka_left table textarea.dlhe{
+            width: 288px;
+      }
+      .linky{
+            float: none;
+            margin-left: 0;
+            margin-bottom: 20px;
+            width: 250px;
+      }
+      .pata .newsletter{
+            text-align: center;
+            width: 300px;
+            margin-top: 30px;
+            float: none;
+      }
+      .pata .newsletter .textbox{
+            width: 250px;
+      }
+      .pata .odkazy{
+            text-align: center;
+            margin-top: 0;
+            width: 300px;
+            float: none;
+      }
+      .pata .odkazy a{
+            line-height: 32px;
+      }
+      .pata .odkazy a:first-of-type{
+            margin-right: 0;
+      }
+      .pata2 p,
+      .pata2 p.author{
+            float: none;
+            text-align: center;
+      }
+      .pata2 p .otaznik .text{
+            width: 250px;
+            left: -200px;
+            height: 235px;
+            top: -282px;
+      }
+}
